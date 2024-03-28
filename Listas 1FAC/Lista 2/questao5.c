@@ -18,7 +18,8 @@ um item.
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int codigo, quantidade;
 
     printf("100 - Cachorro Quente: 3.50R$\n");
@@ -34,32 +35,33 @@ int main() {
     printf("Quantidade: ");
     scanf("%d", &quantidade);
 
-    switch (codigo) {
-        case 100: 
-        printf("\nValor Total do Pedido: %.2fR$", quantidade*3.50);
+    switch (codigo)
+    {
+    case 100:
+        printf("\nValor Total do Pedido: %.2fR$", quantidade * 3.50);
         break;
 
-        case 101:
-        printf("\nValor Total do Pedido: %.2fR$", quantidade*4.50);
+    case 101:
+        printf("\nValor Total do Pedido: %.2fR$", quantidade * 4.50);
         break;
 
-        case 102:
-        printf("\nValor Total do Pedido: %.2fR$", quantidade*5.20);
+    case 102:
+        printf("\nValor Total do Pedido: %.2fR$", quantidade * 5.20);
         break;
 
-        case 103:
-        printf("\nValor Total do Pedido: %dR$", quantidade*3);
+    case 103:
+        printf("\nValor Total do Pedido: %dR$", quantidade * 3);
         break;
 
-        case 104:
-        printf("\nValor Total do Pedido: %dR$", quantidade*4);
+    case 104:
+        printf("\nValor Total do Pedido: %dR$", quantidade * 4);
         break;
 
-        case 105:
-        printf("\nValor Total do Pedido: %.2fR$", quantidade*2.5);
+    case 105:
+        printf("\nValor Total do Pedido: %.2fR$", quantidade * 2.5);
         break;
 
-        default:
+    default:
         printf("Codigo de Produto Invalido!");
     }
 }

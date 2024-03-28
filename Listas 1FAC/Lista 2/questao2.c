@@ -18,7 +18,8 @@ pesoPlaneta = (pesoTerra/10) * gravidadePlaneta
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int planeta;
     float peso;
 
@@ -29,32 +30,33 @@ int main() {
     printf("1 - Mercurio\n2 - Venus\n3 - Marte\n4 - Jupiter\n5 - Saturno\n6 - Urano\n\nEscolha um planeta: ");
     scanf("%d", &planeta);
 
-    switch (planeta) {
-        case 1:
-        printf("\nPeso em Mercurio: %.2fkg", (peso/10)*0.37);
+    switch (planeta)
+    {
+    case 1:
+        printf("\nPeso em Mercurio: %.2fkg", (peso / 10) * 0.37);
         break;
 
-        case 2:
-        printf("\nPeso em Venus: %.2fkg", (peso/10)*0.88);
+    case 2:
+        printf("\nPeso em Venus: %.2fkg", (peso / 10) * 0.88);
         break;
 
-        case 3:
-        printf("\nPeso em Marte: %.2fkg", (peso/10)*0.38);
+    case 3:
+        printf("\nPeso em Marte: %.2fkg", (peso / 10) * 0.38);
         break;
 
-        case 4:
-        printf("\nPeso em Jupiter: %.2fkg", (peso/10)*2.64);
+    case 4:
+        printf("\nPeso em Jupiter: %.2fkg", (peso / 10) * 2.64);
         break;
 
-        case 5:
-        printf("\nPeso em Saturno: %.2fkg", (peso/10)*1.15);
+    case 5:
+        printf("\nPeso em Saturno: %.2fkg", (peso / 10) * 1.15);
         break;
 
-        case 6:
-        printf("\nPeso em Urano: %.2fkg", (peso/10)*1.17);
+    case 6:
+        printf("\nPeso em Urano: %.2fkg", (peso / 10) * 1.17);
         break;
 
-        default:
+    default:
         printf("Insira um planeta valido!");
     }
 }

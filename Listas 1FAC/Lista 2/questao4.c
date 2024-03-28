@@ -15,7 +15,8 @@ consumida durante a viagem;
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float percurso, combustivel, precoLitro;
 
     printf("Insira o percurso (em km) da viagem: ");
@@ -27,6 +28,6 @@ int main() {
     printf("Insira o preco do litro do combustivel: ");
     scanf("%f", &precoLitro);
 
-    printf("Quantidade de combustivel consumido: %.1f Litros\n", percurso/combustivel);
-    printf("Custo total de combustivel: %.2fR$", (percurso/combustivel)*precoLitro);
+    printf("Quantidade de combustivel consumido: %.1f Litros\n", percurso / combustivel);
+    printf("Custo total de combustivel: %.2fR$", (percurso / combustivel) * precoLitro);
 }

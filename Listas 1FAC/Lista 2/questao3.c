@@ -16,14 +16,15 @@ no valor do produto.
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float preco;
 
     printf("Informe o valor do produto: ");
     scanf("%f", &preco);
 
     printf("\nTabela de Valores do Produto:\n");
-    printf("Pagamento a Vista: %.2f\n", preco-(preco*0.1));
-    printf("Em 5x sem Juros: %.2f por mes\n", preco/5);
-    printf("Em 10x com Juros: %.2f por mes\n", (preco+(preco*0.2))/10);
+    printf("Pagamento a Vista: %.2f\n", preco - (preco * 0.1));
+    printf("Em 5x sem Juros: %.2f por mes\n", preco / 5);
+    printf("Em 10x com Juros: %.2f por mes\n", (preco + (preco * 0.2)) / 10);
 }

@@ -19,7 +19,8 @@ IMC ≥ 40,0 Obesidade grau III
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float altura, imc, peso;
 
     printf("Insira sua altura: ");
@@ -28,28 +29,35 @@ int main() {
     printf("Insira seu peso: ");
     scanf("%f", &peso);
 
-    if (altura >= 100) {
-        altura = altura/100;
+    if (altura >= 100)
+    {
+        altura = altura / 100;
     }
 
-    imc = peso/(altura*altura);
+    imc = peso / (altura * altura);
 
-    if (imc < 18.5) {
+    if (imc < 18.5)
+    {
         printf("IMC: Abaixo do Peso");
     }
-    else if (imc < 25) {
+    else if (imc < 25)
+    {
         printf("IMC: Peso Ideal");
     }
-    else if (imc < 30) {
+    else if (imc < 30)
+    {
         printf("IMC: Sobrepeso");
     }
-    else if (imc < 35) {
+    else if (imc < 35)
+    {
         printf("IMC: Obesidade Grau I");
     }
-    else if (imc < 40) {
+    else if (imc < 40)
+    {
         printf("IMC: Obesidade Grau II");
     }
-    else {
+    else
+    {
         printf("IMC: Obesidade Grau III");
     }
 }

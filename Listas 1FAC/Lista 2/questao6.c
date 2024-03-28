@@ -11,7 +11,8 @@ meio dos outros.
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int i, a, b, c, temp;
 
     printf("Entre com tres valores: ");
@@ -23,69 +24,78 @@ int main() {
     printf("\nEscolha uma opcao: ");
     scanf("%d", &i);
 
-    switch (i) {
-        case 1:
-        if (a > b) {
-        temp = a;
-        a = b;
-        b = temp;
+    switch (i)
+    {
+    case 1:
+        if (a > b)
+        {
+            temp = a;
+            a = b;
+            b = temp;
         }
 
-        if (a > c) {
-        temp = a;
-        a = c;
-        c = temp;
+        if (a > c)
+        {
+            temp = a;
+            a = c;
+            c = temp;
         }
 
-        if (b > c) {
-        temp = b;
-        b = c;
-        c = temp;
+        if (b > c)
+        {
+            temp = b;
+            b = c;
+            c = temp;
         }
         printf("%d %d %d", a, b, c);
         break;
 
-        case 2: 
-        if (a < b) {
-        temp = a;
-        a = b;
-        b = temp;
+    case 2:
+        if (a < b)
+        {
+            temp = a;
+            a = b;
+            b = temp;
         }
 
-        if (a < c) {
-        temp = a;
-        a = c;
-        c = temp;
+        if (a < c)
+        {
+            temp = a;
+            a = c;
+            c = temp;
         }
 
-        if (b < c) {
-        temp = b;
-        b = c;
-        c = temp;
+        if (b < c)
+        {
+            temp = b;
+            b = c;
+            c = temp;
         }
 
         printf("%d %d %d", a, b, c);
         break;
-        
-        case 3:
-        if (a > b) {
-        temp = a;
-        a = b;
-        b = temp;
+
+    case 3:
+        if (a > b)
+        {
+            temp = a;
+            a = b;
+            b = temp;
         }
-        if (a > c) {
-        temp = a;
-        a = c;
-        c = temp;
+        if (a > c)
+        {
+            temp = a;
+            a = c;
+            c = temp;
         }
-        if (b > c) {
-        temp = b;
-        b = c;
-        c = temp;
+        if (b > c)
+        {
+            temp = b;
+            b = c;
+            c = temp;
         }
 
         printf("%d %d %d", a, c, b);
         break;
     }
-
 }
