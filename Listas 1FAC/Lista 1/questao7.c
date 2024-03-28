@@ -10,7 +10,8 @@ hora trabalhada acima das 40 iniciais.
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float HT, VPH;
 
     printf("Insira as horas trabalhadas: ");
@@ -20,10 +21,12 @@ int main() {
     printf("Insira o valor pago p/hora: ");
     scanf("%f", &VPH);
 
-    if (HT<=40) {
-        printf("Salario Semanal: %.2f", HT*VPH);
+    if (HT <= 40)
+    {
+        printf("Salario Semanal: %.2f", HT * VPH);
     }
-    else {
-        printf("Salario Semanal: %.2f", (VPH*40)+((HT-40)*1.5)*VPH);
+    else
+    {
+        printf("Salario Semanal: %.2f", (VPH * 40) + ((HT - 40) * 1.5) * VPH);
     }
 }

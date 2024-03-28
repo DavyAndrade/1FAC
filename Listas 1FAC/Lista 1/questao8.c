@@ -25,7 +25,8 @@ valor da taxa de serviço e o total geral.
 #include <stdio.h>
 #include <ctype.h>
 
-int main() {
+int main()
+{
     char nome[40], tipoAp;
     int numDiaria, consInterno, total, subTotal, taxa;
 
@@ -48,29 +49,29 @@ int main() {
     fflush(stdin);
 
     // Calculando o Valor das Diárias
-    switch (tipoAp) {
-        case 'A':
-            numDiaria = numDiaria*350;
-            break;
+    switch (tipoAp)
+    {
+    case 'A':
+        numDiaria = numDiaria * 350;
+        break;
 
-        case 'B':
-            numDiaria = numDiaria*275;
-            break;
-        
-        case 'C':
-            numDiaria = numDiaria*200;
-            break;
+    case 'B':
+        numDiaria = numDiaria * 275;
+        break;
 
-        case 'D':
-            numDiaria = numDiaria*150;
-            break;
+    case 'C':
+        numDiaria = numDiaria * 200;
+        break;
+
+    case 'D':
+        numDiaria = numDiaria * 150;
+        break;
     }
 
     // Calculando os demais valores
-    subTotal = numDiaria+consInterno;
-    taxa = subTotal*0.10;
-    total = subTotal+taxa;
-
+    subTotal = numDiaria + consInterno;
+    taxa = subTotal * 0.10;
+    total = subTotal + taxa;
 
     // Exbibindo a Nota Fiscal
     printf("Nome: %s\n", nome);

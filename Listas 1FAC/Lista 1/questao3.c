@@ -9,7 +9,8 @@ altura, utilizando as seguintes fórmulas:
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int genero;
     float pesoIdeal, altura;
 
@@ -21,19 +22,23 @@ int main() {
     scanf("%f", &altura);
     fflush(stdin);
 
-    if (altura>100) {
-        altura = altura/100;
-    } 
+    if (altura > 100)
+    {
+        altura = altura / 100;
+    }
 
-    if (genero == 1) {
-        pesoIdeal = (72.7*altura) - 58;
+    if (genero == 1)
+    {
+        pesoIdeal = (72.7 * altura) - 58;
         printf("Peso Ideal: %.2fkg", pesoIdeal);
     }
-    else if (genero == 2) {
-        pesoIdeal = (62.1*altura) - 44.7;
+    else if (genero == 2)
+    {
+        pesoIdeal = (62.1 * altura) - 44.7;
         printf("Peso Ideal: %.2fkg", pesoIdeal);
     }
-    else {
+    else
+    {
         printf("Insira um valor valido para genero!!");
     }
 }

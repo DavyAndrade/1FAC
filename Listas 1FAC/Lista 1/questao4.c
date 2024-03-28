@@ -15,22 +15,27 @@ R$ 2500,00 ou mais 40% do saldo médio
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float saldoMedio;
 
     printf("Entre com o saldo medio: ");
     scanf("%f", &saldoMedio);
 
-    if (saldoMedio < 1000) {
+    if (saldoMedio < 1000)
+    {
         printf("Credito: 00 Reais");
-    } 
-    else if (saldoMedio <= 1499.99) {
-        printf("Credito: %.2f Reais", saldoMedio*0.2);
     }
-    else if (saldoMedio <= 2499.99) {
-        printf("Credito: %.2f Reais", saldoMedio*0.3);
+    else if (saldoMedio <= 1499.99)
+    {
+        printf("Credito: %.2f Reais", saldoMedio * 0.2);
     }
-    else {
-        printf("Credito: %.2f Reais", saldoMedio*0.4);
+    else if (saldoMedio <= 2499.99)
+    {
+        printf("Credito: %.2f Reais", saldoMedio * 0.3);
+    }
+    else
+    {
+        printf("Credito: %.2f Reais", saldoMedio * 0.4);
     }
 }
