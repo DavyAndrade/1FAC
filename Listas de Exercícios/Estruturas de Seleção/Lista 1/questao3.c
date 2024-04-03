@@ -16,11 +16,9 @@ int main()
 
     printf("Informe seu genero: \n\n1 - Masculino\n2 - Feminino\n\n");
     scanf("%d", &genero);
-    fflush(stdin);
 
     printf("Informe sua altura: ");
     scanf("%f", &altura);
-    fflush(stdin);
 
     if (altura > 100)
     {

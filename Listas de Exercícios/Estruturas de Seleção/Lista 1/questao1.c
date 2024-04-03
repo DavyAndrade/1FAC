@@ -16,15 +16,12 @@ void main() {
     // pedindo valores
     printf("Entre com o custo de fabrica: ");
     scanf("%f", &custoFabrica);
-    fflush(stdin);
 
     printf("Entre com a porcentagem do distribuidor: ");
     scanf("%f", &distribuidor);
-    fflush(stdin);
 
     printf("Entre com os impostos (porcentagem): ");
     scanf("%f", &impostos);
-    fflush(stdin);
 
     // calculando o custo do carro
     custo = custoFabrica + (custoFabrica*(distribuidor/100)) + (custoFabrica*(impostos/100));

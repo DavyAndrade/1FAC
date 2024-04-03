@@ -16,7 +16,6 @@ int main()
 
     printf("Insira as horas trabalhadas: ");
     scanf("%f", &HT);
-    fflush(stdin);
 
     printf("Insira o valor pago p/hora: ");
     scanf("%f", &VPH);

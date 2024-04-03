@@ -31,26 +31,23 @@ int main()
 
     for (i = 1; i <= QUANT; i++)
     {
-        printf("\nInforme seu numero de matricula: ");
+        printf("\nMatricula: ");
         scanf("%d", &matricula);
-        fflush(stdin);
 
-        printf("\nInforme sua idade: ");
+        printf("\nIdade: ");
         scanf("%d", &idade);
         fflush(stdin);
 
-        printf("\n[M]asculino\n[F]eminino\n\nInforme seu genero: ");
+        printf("\n[M]asculino\n[F]eminino\n\nGenero: ");
         scanf("%c", &genero);
         genero = toupper(genero);
         fflush(stdin);
 
         printf("\nTempo de servico (em anos): ");
         scanf("%d", &tempo);
-        fflush(stdin);
 
-        printf("\nInforme seu salario: ");
+        printf("\nSalario: ");
         scanf("%f", &salario);
-        fflush(stdin);
 
         if ((idade - tempo < 21))
         {
@@ -68,12 +65,14 @@ int main()
             soma += salario;
         }
 
-        if ((tempo > tempoMaior)) {
+        if ((tempo > tempoMaior))
+        {
             tempoMaior = tempo;
             matriculaMaisAntigo = matricula;
         }
 
-        if ((tempo < tempoMenor)) {
+        if ((tempo < tempoMenor))
+        {
             tempoMenor = tempo;
             matriculaMaisNovo = matricula;
         }
@@ -81,7 +80,7 @@ int main()
 
     printf("\nQuantidade de funcionarios do genero feminino: %d", contF);
     printf("\nQuantidade de funcionarios com menos de 21: %d", cont21);
-    printf("\nMedia dos Salarios dos Homens: %.2f", soma / contM);
+    printf("\nMedia dos Salarios dos Homens: %.2f", (soma / contM));
     printf("\nMatricula do Funcionario Mais Novo: %d", matriculaMaisNovo);
     printf("\nMatricula do Funcionario Mais Antigo: %d\n", matriculaMaisAntigo);
 }

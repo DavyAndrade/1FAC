@@ -49,8 +49,6 @@ int main()
 
         somaMulta += divida;
 
-        printf("\nDivida do Motorista de CNH Nº%d: %.2fR$\n", cnh, divida);
-
         if (numMultas > maiorNumMultas)
         {
             maiorNumMultas = numMultas;
@@ -58,6 +56,7 @@ int main()
         }
     }
 
+    printf("\nDivida do Motorista de CNH Nº%d: %.2fR$\n", cnh, divida);
     printf("\nTotal Arrecadado: %.2fR$", somaMulta);
     printf("\nCNH do Motorista com Maior Numero de Multas: %d", maiorCNH);
 }

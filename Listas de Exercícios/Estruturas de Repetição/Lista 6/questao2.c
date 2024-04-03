@@ -17,7 +17,7 @@ int main()
 
     for (i = 1; i <= n; i++)
     {
-        printf("\nEntre com um numero: ");
+        printf("\nEntre com um numero [%d]: ", i);
         scanf("%d", &num);
         fflush(stdin);
 

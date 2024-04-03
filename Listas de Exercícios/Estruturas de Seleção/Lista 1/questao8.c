@@ -42,11 +42,9 @@ int main()
 
     printf("Quantidade de Diarias: ");
     scanf("%d", &numDiaria);
-    fflush(stdin);
 
     printf("Consumo Interno: ");
     scanf("%d", &consInterno);
-    fflush(stdin);
 
     // Calculando o Valor das Diárias
     switch (tipoAp)

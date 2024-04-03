@@ -25,7 +25,6 @@ int main()
 
     printf("Insira seu peso: ");
     scanf("%f", &peso);
-    fflush(stdin);
 
     printf("1 - Mercurio\n2 - Venus\n3 - Marte\n4 - Jupiter\n5 - Saturno\n6 - Urano\n\nEscolha um planeta: ");
     scanf("%d", &planeta);

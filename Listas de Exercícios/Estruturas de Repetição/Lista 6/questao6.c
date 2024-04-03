@@ -19,7 +19,6 @@ int main()
     {
         printf("\nInsira um numero [%d]: ", i);
         scanf("%d", &num);
-        fflush(stdin);
 
         if (num % 2 == 0)
         {

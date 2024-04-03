@@ -7,7 +7,7 @@ múltiplos de x fornecidos.
 */
 
 #include <stdio.h>
-#define TAM 5
+#define TAM 50
 
 int main()
 {

@@ -31,12 +31,12 @@ int main()
 
     for (i = 1; i <= quantEntrevistados; i++)
     {
-        printf("\n[M]asculino\n[F]eminino\n\nGenero do Entrevistado %d: ", i);
+        printf("\n[M]asculino\n[F]eminino\n\nGenero do Entrevistado [%d]: ", i);
         scanf("%c", &genero);
         genero = toupper(genero);
         fflush(stdin);
 
-        printf("\n[G]ostou\n[N]ao Gostou\n\nOpiniao do Entrevistado %d: ", i);
+        printf("\n[G]ostou\n[N]ao Gostou\n\nOpiniao do Entrevistado [%d]: ", i);
         scanf("%c", &resposta);
         resposta = toupper(resposta);
         fflush(stdin);
@@ -66,10 +66,10 @@ int main()
         }
     }
 
-    printf("\nQuantidade de pessoas que gostaram do produto: %d", mulherGostou + homemGostou);
+    printf("\nQuantidade de pessoas que gostaram do produto: %d", (mulherGostou + homemGostou));
     printf("\nQuantidade de pessoas que nao gostaram do produto: %d\n", quantN);
 
-    if ((homemGostou / contM) > (mulherGostou / contF))
+    if (((float)homemGostou / contM) > ((float)mulherGostou / contF))
     {
         printf("Genero com mais aceitacao: Masculino");
     }

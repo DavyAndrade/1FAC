@@ -12,7 +12,7 @@ R$ 1.000,00.
 */
 
 #include <stdio.h>
-#define HAB 5
+#define HAB 300
 
 int main()
 {
@@ -21,13 +21,11 @@ int main()
 
     for (i = 1; i <= HAB; i++)
     {
-        printf("\nInforme seu salario [%d]: ", i);
+        printf("\nSalario [%d]: ", i);
         scanf("%f", &salario);
-        fflush(stdin);
 
-        printf("\nQuantidade de Filhos [%d]: ", i);
+        printf("Quantidade de Filhos [%d]: ", i);
         scanf("%d", &quantFilhos);
-        fflush(stdin);
 
         totalFilhos += quantFilhos;
         totalSalario += salario;
@@ -44,7 +42,7 @@ int main()
     }
 
     printf("\nMedia do salario da populacao: %.2fR$", (float)totalSalario / HAB);
-    printf("\nMedia de filhos p/habitante: %.1f", (float)(totalFilhos / HAB));
+    printf("\nMedia de filhos p/habitante: %.1f", ((float)totalFilhos / HAB));
     printf("\nMaior salario: %.2fR$", maiorSalario);
-    printf("\nPercentual de Pessoas com salario ate 1000R$: %.0f p/cento", ((float)(HAB * contMenor1000) * 10));
+    printf("\nPercentual de Pessoas com salario ate 1000R$: %.0f p/cento", ((float)HAB / contMenor1000) * 10);
 }

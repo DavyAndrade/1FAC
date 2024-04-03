@@ -20,10 +20,10 @@ int main()
 {
     int i, num, dezena, unidade;
 
-    printf("\nInsira um numero: ");
+    printf("\nInsira um numero entre 1 e 18: ");
     scanf("%d", &num);
 
-    if (num > 18)
+    if ((num < 1) || (num > 18))
     {
         printf("Numero Invalido!");
     }

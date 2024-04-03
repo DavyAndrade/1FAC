@@ -33,7 +33,6 @@ int main()
         printf("Deseja Continuar? [S/N]: ");
         scanf("%c", &opcao);
         opcao = toupper(opcao);
-        fflush(stdin);
 
     } while (opcao == 'S');
 

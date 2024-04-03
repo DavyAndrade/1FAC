@@ -15,7 +15,6 @@ int main()
 
     printf("Dia: ");
     scanf("%d", &dia);
-    fflush(stdin);
 
     printf("Mes: ");
     scanf("%d", &mes);

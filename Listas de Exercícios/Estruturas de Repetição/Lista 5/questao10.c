@@ -66,7 +66,7 @@ int main()
 
     printf("\nMenor Altura: %.2f", menorAltura);
     printf("\nMaior Altura: %.2f", maiorAltura);
-    printf("\nMedia de Altura das Mulheres: %.2f", (float)alturaMulheres / contFem);
-    printf("\nMedia de Altura da Populacao: %.2f", (float)alturaGeral / QUANT);
-    printf("\nPercentual de Homens na Populacao: %d p/cento", (QUANT / contMas) * 10);
+    printf("\nMedia de Altura das Mulheres: %.2f", (alturaMulheres / contFem));
+    printf("\nMedia de Altura da Populacao: %.2f", (alturaGeral / QUANT));
+    printf("\nPercentual de Homens na Populacao: %d p/cento", ((float)QUANT / contMas) * 10);
 }

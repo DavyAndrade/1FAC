@@ -43,5 +43,5 @@ int main()
 
     printf("Soma dos 50 Primeiros: %d\n", soma50Primeiros);
     printf("Menor Numero no Intervalo de 51 a 100: %d\n", menorNum);
-    printf("Media dos Valores de 101 a 150: %.1f\n", (float)soma50Ultimos / 50);
+    printf("Media dos Valores de 101 a 150: %.1f\n", ((float)soma50Ultimos / 50));
 }

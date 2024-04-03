@@ -7,7 +7,7 @@ estão no intervalo definido por [x-y,x+y].
 */
 
 #include <stdio.h>
-#define TAM 100
+#define TAM 5
 
 int main()
 {
@@ -15,17 +15,16 @@ int main()
 
     printf("\nInforme o valor de X: ");
     scanf("%d", &x);
-    fflush(stdin);
+
 
     printf("\nInforme o valor de Y: ");
     scanf("%d", &y);
-    fflush(stdin);
+
 
     for (i = 1; i <= TAM; i++)
     {
         printf("\nInsira um numero [%d]: ", i);
         scanf("%d", &num);
-        fflush(stdin);
 
         if ((num >= x - y) && (num <= x + y))
         {

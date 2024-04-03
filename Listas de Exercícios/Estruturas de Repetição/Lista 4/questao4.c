@@ -16,7 +16,7 @@ int main()
 
     for (i = 1; i <= QUANT; i++)
     {
-        printf("Entre com um numero: ");
+        printf("\nEntre com um numero [%d]: ", i);
         scanf("%d", &num);
 
         if (num > 0)
@@ -32,5 +32,5 @@ int main()
     }
 
     printf("\nQuantidade de Negativos: %d", quantNeg);
-    printf("\nMedia dos Positivos: %.1f", (float)somaPos / quantPos);
+    printf("\nMedia dos Positivos: %.1f", ((float)somaPos / quantPos));
 }
