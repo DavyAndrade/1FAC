@@ -23,14 +23,7 @@ int main()
 
     for (i = 1; i <= n; i++)
     {
-        if (i == 1)
-        {
-            printf("%d ", a1);
-        }
-        else
-        {
-            a1 = a1 + razao;
-            printf("%d ", a1);
-        }
+        printf("%d ", a1);
+        a1 += razao;
     }
 }

@@ -8,3 +8,8 @@ Nota: considerar que não existem algarismos
 repetidos no mesmo número.
 */
 
+#include <stdio.h>
+
+int main()
+{
+}

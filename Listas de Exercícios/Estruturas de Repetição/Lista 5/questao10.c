@@ -21,24 +21,19 @@ população.
 int main()
 {
     int i, contMas = 0, contFem = 0;
-    float altura, alturaGeral = 0, maiorAltura = 0, menorAltura = 100, alturaMulheres = 0;
+    float altura, alturaGeral = 0, maiorAltura = 0, menorAltura = 10, alturaMulheres = 0;
     char genero;
 
     for (i = 1; i <= QUANT; i++)
     {
-        printf("\nInforme seu genero [M/F]: ");
+        printf("\nGenero [M/F] (%d): ", i);
         scanf("%c", &genero);
         genero = toupper(genero);
         fflush(stdin);
 
-        printf("\nInforme sua altura: ");
+        printf("\nAltura (%d): ", i);
         scanf("%f", &altura);
         fflush(stdin);
-
-        if (altura >= 100)
-        {
-            altura = altura / 100;
-        }
 
         if (altura > maiorAltura)
         {
@@ -68,5 +63,5 @@ int main()
     printf("\nMaior Altura: %.2f", maiorAltura);
     printf("\nMedia de Altura das Mulheres: %.2f", (alturaMulheres / contFem));
     printf("\nMedia de Altura da Populacao: %.2f", (alturaGeral / QUANT));
-    printf("\nPercentual de Homens na Populacao: %d p/cento", ((float)QUANT / contMas) * 10);
+    printf("\nPercentual de Homens na Populacao: %.1f%%", ((float)contMas / QUANT) * 100);
 }

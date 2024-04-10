@@ -29,11 +29,6 @@ int main()
     printf("Insira seu peso: ");
     scanf("%f", &peso);
 
-    if (altura >= 100)
-    {
-        altura = altura / 100;
-    }
-
     imc = peso / (altura * altura);
 
     if (imc < 18.5)

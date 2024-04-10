@@ -31,21 +31,22 @@ int main()
 
     for (i = 1; i <= quant; i++)
     {
-        printf("\nInforme o CNH do Motorista [%d]: ", i);
+        printf("\nCNH do Motorista [%d]: ", i);
         scanf("%d", &cnh);
-        fflush(stdin);
 
-        printf("\nQuantidade de Multas do Motorista [%d]: ", i);
+        printf("\nQuantidade de Multas [%d]: ", i);
         scanf("%d", &numMultas);
-        fflush(stdin);
 
+        divida = 0;
         for (j = 1; j <= numMultas; j++)
         {
-            printf("\nInforme o Valor da Multa [%d]: ", j);
+            printf("\nValor da Multa [%d]: ", j);
             scanf("%f", &valor);
 
             divida += valor;
         }
+
+        printf("\nDivida do Motorista de CNH N.%d: R$%.2f\n", cnh, divida);
 
         somaMulta += divida;
 
@@ -56,7 +57,6 @@ int main()
         }
     }
 
-    printf("\nDivida do Motorista de CNH Nº%d: %.2fR$\n", cnh, divida);
-    printf("\nTotal Arrecadado: %.2fR$", somaMulta);
+    printf("\nTotal Arrecadado: R$%.2f", somaMulta);
     printf("\nCNH do Motorista com Maior Numero de Multas: %d", maiorCNH);
 }

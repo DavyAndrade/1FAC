@@ -19,5 +19,5 @@ int main()
         soma += i;
     }
 
-    printf("\nSoma dos Numeros de 1 a %d: %d\n", n, soma);
+    printf("\nSoma dos Numeros de 1 a %d = %d\n", n, soma);
 }

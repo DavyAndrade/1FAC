@@ -8,34 +8,30 @@ pares.
 */
 
 #include <stdio.h>
-#include <ctype.h>
 
 int main()
 {
     int num, somaPares = 0, prodImpares = 1;
-    char opcao;
 
     do
     {
         printf("\nEntre com um numero inteiro positivo: ");
         scanf("%d", &num);
-        fflush(stdin);
 
-        if (num % 2 == 0)
+        if (num > 0)
         {
-            somaPares += num;
+            if (num % 2 == 0)
+            {
+                somaPares += num;
+            }
+            else
+            {
+                prodImpares *= num;
+            }
         }
-        else
-        {
-            prodImpares *= num;
-        }
 
-        printf("Deseja Continuar? [S/N]: ");
-        scanf("%c", &opcao);
-        opcao = toupper(opcao);
+    } while (num > 0);
 
-    } while (opcao == 'S');
-
-    printf("\nSoma dos Numeros Pares: %d", somaPares);
-    printf("\nProduto dos Numeros Impares: %d", prodImpares);
+    printf("\nSoma dos Numeros Pares = %d", somaPares);
+    printf("\nProduto dos Numeros Impares = %d", prodImpares);
 }

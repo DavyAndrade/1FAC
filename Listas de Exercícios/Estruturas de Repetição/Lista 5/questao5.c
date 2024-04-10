@@ -9,14 +9,14 @@ primeiros termos da seguinte série:
 
 int main()
 {
-    int i, n, result;
+    int i, n, result = 1;
 
     printf("\nInforme o valor de N: ");
     scanf("%d", &n);
 
-    for (i = 1, result = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
     {
         printf("%d ", result);
-        result = result + result;
+        result *= 2;
     }
 }

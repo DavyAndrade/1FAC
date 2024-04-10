@@ -7,3 +7,9 @@ Considerando este conceito, implementar um
 programa que, dados dois números inteiros,
 determine se são ou não primos entre si.
 */
+
+#include <stdio.h>
+
+int main()
+{
+}

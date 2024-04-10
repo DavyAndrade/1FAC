@@ -20,11 +20,6 @@ int main()
     printf("Informe sua altura: ");
     scanf("%f", &altura);
 
-    if (altura > 100)
-    {
-        altura = altura / 100;
-    }
-
     if (genero == 1)
     {
         pesoIdeal = (72.7 * altura) - 58;

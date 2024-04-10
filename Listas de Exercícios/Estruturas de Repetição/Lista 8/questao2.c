@@ -13,6 +13,7 @@ N = 7
 5 4 3 2 1 0 0
 6 5 4 3 2 1 0
 7 6 5 4 3 2 1
+
 N = 4
 
 1 0 0 0
@@ -23,11 +24,10 @@ N = 4
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n, i;
 
     printf("\nInforme o valor de N: ");
     scanf("%d", &n);
-
-    
 }

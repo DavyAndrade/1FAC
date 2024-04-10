@@ -30,6 +30,4 @@ int main()
 
     printf("\nInforme o valor de C: ");
     scanf("%d", &c);
-
-    
 }

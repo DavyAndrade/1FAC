@@ -37,11 +37,6 @@ int main()
         scanf("%f", &altura);
         fflush(stdin);
 
-        if (altura > 100)
-        {
-            altura = altura / 100;
-        }
-
         if (idade > 50)
         {
             cont50++;
