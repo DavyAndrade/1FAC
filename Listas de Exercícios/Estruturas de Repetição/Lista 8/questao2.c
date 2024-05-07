@@ -24,10 +24,32 @@ N = 4
 
 #include <stdio.h>
 
+#include <stdio.h>
+
 int main()
 {
-    int n, i;
 
-    printf("\nInforme o valor de N: ");
+    int n, i, j, k;
+
+    // Solicita ao usuário o número inteiro n
+    printf("Digite um numero inteiro positivo: ");
     scanf("%d", &n);
+
+    // Loop para cada linha da sequência
+    for (i = 1; i <= n; i++)
+    {
+
+        for (j = i; j >= 1; j--)
+        {
+            printf("%d ", j);
+        }
+
+        for (k = 1; k <= n - i; k++)
+        {
+            printf("0 ");
+        }
+
+        printf("\n");
+
+    }
 }

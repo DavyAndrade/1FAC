@@ -12,6 +12,7 @@ a produção duplique.
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     
 }

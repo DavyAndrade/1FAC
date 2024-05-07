@@ -18,6 +18,7 @@ repetição estudada.
 
 #include <stdio.h>
 
+// UTILIZANDO WHILE
 int main()
 {
     int a, b, c;
@@ -30,4 +31,29 @@ int main()
 
     printf("\nInforme o valor de C: ");
     scanf("%d", &c);
+
+    if (b > a)
+    {
+        while (a <= b)
+        {
+            if (a % c != 0)
+            {
+                printf("%d ", a);
+            }
+
+            a++;
+        }
+    }
+
+    else
+    {
+        while (a >= b)
+        {
+            if (a % c != 0)
+            {
+                printf("%d ", a);
+            }
+            a--;
+        }
+    }
 }
