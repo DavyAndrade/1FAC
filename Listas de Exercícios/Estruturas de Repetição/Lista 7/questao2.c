@@ -14,5 +14,22 @@ a produção duplique.
 
 int main()
 {
-    
+    float crescimento;
+    int prodAnual, anos = 0;
+
+    printf("Informe a porcentagem de crescimento constante: ");
+    scanf("%f", &crescimento);
+
+    printf("Producao Anual: ");
+    scanf("%d", &prodAnual);
+
+    crescimento /= 100;
+
+    while (prodAnual < (prodAnual * 2))
+    {
+        prodAnual += (prodAnual * crescimento);
+        anos++;
+    }
+
+    printf("Anos Necessarios: %d\n", anos);
 }
