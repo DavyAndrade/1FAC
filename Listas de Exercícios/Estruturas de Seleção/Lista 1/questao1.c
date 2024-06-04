@@ -8,22 +8,29 @@ que calcule o custo ao consumidor de
 determinado carro.
 */
 
+// Importação de Bibliotecas
 #include <stdio.h>
 
+// Main
 void main() {
+    // Declaração de Variáveis
     float custoFabrica, distribuidor, impostos, custo;
 
-    // pedindo valores
+    // Lendo o Custo de Fábrica
     printf("Entre com o custo de fabrica: ");
     scanf("%f", &custoFabrica);
 
+    // Lendo o Percentual do Distibuidor
     printf("Entre com a porcentagem do distribuidor: ");
     scanf("%f", &distribuidor);
 
+    // Lendo o Percentual de Impostos
     printf("Entre com os impostos (porcentagem): ");
     scanf("%f", &impostos);
 
-    // calculando o custo do carro
+    // Calculando o Custo do Carro
     custo = custoFabrica + (custoFabrica*(distribuidor/100)) + (custoFabrica*(impostos/100));
+
+    // Exibindo o Custo do Carro
     printf("Custo Total do Veiculo: %.2f", custo);
 }

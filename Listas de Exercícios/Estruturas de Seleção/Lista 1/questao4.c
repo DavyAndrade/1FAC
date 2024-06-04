@@ -13,15 +13,22 @@ R$ 2499,99 30% do saldo médio
 R$ 2500,00 ou mais 40% do saldo médio
 */
 
+
+// Importação de Bibliotecas
 #include <stdio.h>
 
+// Main
 int main()
 {
+
+    // Declaração de Variáveis
     float saldoMedio;
 
+    // Solicitando o Saldo Médio do Cliente
     printf("Entre com o saldo medio: ");
     scanf("%f", &saldoMedio);
 
+    // Determinando os Créditos do Cliente conforme seu Saldo Médio e exibindo
     if (saldoMedio < 1000)
     {
         printf("Credito: 00 Reais");
