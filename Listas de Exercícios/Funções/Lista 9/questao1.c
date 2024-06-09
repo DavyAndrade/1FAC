@@ -9,10 +9,10 @@ A e B.
 #include <stdio.h>
 
 // Protótipo das Funções
-int exibirMultiplos(int n, int a, int b);
+void exibirMultiplos(int n, int a, int b);
 
 // Main
-void main()
+int main()
 {
     // Declarando Variáveis
     int num, inferior, superior;
@@ -30,14 +30,15 @@ void main()
 }
 
 // Funções
-int exibirMultiplos(int n, int a, int b)
+void exibirMultiplos(int n, int a, int b)
 {
     // Declaração de Variáveis
     int i;
 
-    // Varrendo os Multiplos de N e Exibindo
+    // Percorrendo o intervalo a, b
     for (i = a; i <= b; i++)
     {
+        // Exibindo os Múltiplos de N
         if (i % n == 0)
         {
             printf("%d ", i);

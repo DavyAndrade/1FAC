@@ -12,7 +12,7 @@ para graus Fahrenheit.
 float conversao(int C);
 
 // Main
-void main()
+int main()
 {
     // Declaração de Variáveis
     int celsius;

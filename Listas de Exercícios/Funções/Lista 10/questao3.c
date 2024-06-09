@@ -7,37 +7,54 @@ quantidade de elementos fornecidos (excluindo
 o 0) e o maior dentre eles.
 */
 
+// Importação de Bibliotecas
 #include <stdio.h>
-#include <limits.h>
+#include <float.h>
 
-float leituraDados();
+// Protótipo de Funções
+void leituraDados(int *quant, float *maiorNum);
 
+// Main
 int main()
 {
-    leituraDados();
+    // Declaração de Variáveis
+    int quantidade;
+    float maior;
+
+    // Chamando a Função
+    leituraDados(&quantidade, &maior);
+
+    // Exibindo o Resultado
+    printf("\nQuantidade de Numeros Fornecidos: %d\n", quantidade);
+    printf("\nMaior Valor: %.1f\n", maior);
 }
 
-float leituraDados()
+// Funções
+void leituraDados(int *quant, float *maiorNum)
 {
-    float num, maiorNum = INT_MIN;
-    int cont = 0;
+    // Declaração de Variáveis
+    float num;
 
-    while (num != 0)
+    // Inicializando as Saídas
+    *quant = 0;
+    *maiorNum = FLT_MIN;
+
+    // Pedindo um número enquanto for diferente de 0
+    do
     {
+        // Pedindo Um número
         printf("Entre com um numero: ");
         scanf("%f", &num);
 
+        // Incrementando a Quantidade e Mudando o Maior Valor
         if (num != 0)
         {
-            cont++;
+            (*quant)++;
 
-            if (num > maiorNum)
+            if (num > *maiorNum)
             {
-                maiorNum = num;
+                *maiorNum = num;
             }
         }
-    }
-
-    printf("\nQuantidade de Valores Fornecidos: %d\n", cont);
-    printf("Maior valor: %.1f\n", maiorNum);
+    } while (num != 0);
 }

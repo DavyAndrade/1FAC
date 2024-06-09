@@ -20,7 +20,6 @@ R$ 2500,00 ou mais 40% do saldo médio
 // Main
 int main()
 {
-
     // Declaração de Variáveis
     float saldoMedio;
 

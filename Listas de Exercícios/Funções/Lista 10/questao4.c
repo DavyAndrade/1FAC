@@ -13,31 +13,40 @@ inteiro que, na verdade, será a solução aproximada
 do logaritmo.
 */
 
+// Importação de Bibliotecas
 #include <stdio.h>
 
-int logaritmo(int a, int b);
+// Protótipo das Funções
+int logaritmo(int base, int potencia);
 
+// Main
 int main()
 {
-    int base, potencia;
+    // Declaração de Variáveis
+    int base, potencia, resultado;
 
+    // Solicitando a Base
     printf("Infome a Base do Logaritmo: ");
     scanf("%d", &base);
 
-    printf("Informe o Potencia do Logaritmo: ");
+    // Solicitando a Potência
+    printf("Informe a Potencia do Logaritmo: ");
     scanf("%d", &potencia);
 
-    logaritmo(base, potencia);
+    // Chamando a Função
+    resultado = logaritmo(base, potencia);
+
+    printf("Log%d %d = %d ", base, potencia, resultado);
 }
 
-int logaritmo(int a, int b)
+int logaritmo(int base, int potencia)
 {
     int i, result = 0;
 
-    for (i = b; i != 1; i /= a)
+    for (i = base; i != 1; i /= potencia)
     {
         result++;
     }
 
-    printf("\nLog%d %d = %d", a, b, result);
+    return result;
 }

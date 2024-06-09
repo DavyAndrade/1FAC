@@ -47,11 +47,13 @@ int mdc(int n1, int n2)
         menor = n2;
     }
 
-    // Verificando se 'i' é Divisor em Comum de 'n1' e 'n2'
+    // Percorrendo de 1 ao menor valor
     for (i = 1; i <= menor; i++)
     {
+        // Verificando se 'i' é Divisor em Comum de 'n1' e 'n2'
         if ((n1 % i == 0) && (n2 % i == 0))
         {
+            // atribuindo o valor de i ao resultado
             resultado = i;
         }
     }

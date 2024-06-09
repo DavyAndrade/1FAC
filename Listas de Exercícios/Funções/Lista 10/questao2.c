@@ -6,37 +6,50 @@ de 2 existentes no intervalo definido pelos dois
 valores, assim como a maior delas.
 */
 
+// Importação de Bibliotecas
 #include <stdio.h>
 
-int pot(int a, int b);
+// Protótipo das Funções
+void pot(int a, int b, int *quant, int *maiorValor);
 
+// Main
 int main()
 {
-    int inferior, superior;
+    // Declaração de Variáveis
+    int inferior, superior, maior, cont;
 
+    // Pedindo o Intervalo
     printf("Entre com um intervalo: ");
     scanf("%d %d", &inferior, &superior);
 
-    pot(inferior, superior);
+    // Chamando a Função
+    pot(inferior, superior, &cont, &maior);
+
+    // Exibindo os resultados
+    printf("\nQuantidade de Potencias no Intervalo (%d, %d): %d", inferior, superior, cont);
+    printf("\nMaior Valor: %d", maior);
 }
 
-int pot(int a, int b)
+// Funções
+void pot(int a, int b, int *quant, int *maiorValor)
 {
-    int i, maiorValor = a, cont = 0;
+    // Declaração de Vairiáveis
+    int i, maior = a, cont = 0;
 
+    // Varrendo as potências até B
     for (i = 1; i <= b; i *= 2)
     {
+        // Incrementando as potências maiores que a
         if (i >= a)
         {
             cont++;
         }
 
-        if (i > maiorValor)
-        {
-            maiorValor = i;
-        }
+        // Atualizando o maior valor
+        maior = i;
     }
 
-    printf("\nPotencias Existentes no Intervalo: %d", cont);
-    printf("\nMaior Potencia: %d\n", maiorValor);
+    // Atribuindo os valores obtidos para a saída de dados
+    *maiorValor = maior;
+    *quant = cont;
 }

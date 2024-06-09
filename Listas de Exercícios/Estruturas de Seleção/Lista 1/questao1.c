@@ -12,7 +12,8 @@ determinado carro.
 #include <stdio.h>
 
 // Main
-void main() {
+void main()
+{
     // Declaração de Variáveis
     float custoFabrica, distribuidor, impostos, custo;
 
@@ -29,7 +30,7 @@ void main() {
     scanf("%f", &impostos);
 
     // Calculando o Custo do Carro
-    custo = custoFabrica + (custoFabrica*(distribuidor/100)) + (custoFabrica*(impostos/100));
+    custo = custoFabrica + (custoFabrica * (distribuidor / 100)) + (custoFabrica * (impostos / 100));
 
     // Exibindo o Custo do Carro
     printf("Custo Total do Veiculo: %.2f", custo);

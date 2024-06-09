@@ -11,7 +11,7 @@ termo da sequência de Fibonacci.
 int fibonacci(int n);
 
 // Main
-void main()
+int main()
 {
     // Declaração de Varíaveis
     int termo, result;

@@ -9,10 +9,10 @@ inteiro N.
 #include <stdio.h>
 
 // Protótipo das Funções
-int exibirPrimos(int n);
+void exibirPrimos(int n);
 
 // Main
-void main()
+int main()
 {
     // Declaração de Variáveis
     int num;
@@ -26,7 +26,7 @@ void main()
 }
 
 // Funções
-int exibirPrimos(int n)
+void exibirPrimos(int n)
 {
     // Declaração de Variáveis
     int i, j, divisores;

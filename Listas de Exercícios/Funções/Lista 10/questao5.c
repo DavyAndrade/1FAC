@@ -21,21 +21,28 @@ tabuada de potências de 2 deveria ser exibida:
 2^9 = 512
 */
 
+// Importação das Bibliotecas
 #include <stdio.h>
 
-int potTabuada(int n);
+// Protótipo das Funções
+void potTabuada(int n);
 
+// Main
 int main()
 {
+    // Declaração de Variáveis
     int num;
 
+    // Pedindo o numero
     printf("Entre com um numero: ");
     scanf("%d", &num);
 
+    // Chamando a Função
     potTabuada(num);
 }
 
-int potTabuada(int n)
+// Funções
+void potTabuada(int n)
 {
     int i, result = n;
 

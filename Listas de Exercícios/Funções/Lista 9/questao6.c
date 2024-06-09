@@ -16,10 +16,10 @@ Exemplo 2: N = 5
 #include <stdio.h>
 
 // Protótipo das Funções
-int exibirSequencia(int n);
+void exibirSequencia(int n);
 
 // Main
-void main()
+int main()
 {
     // Declaração de Variáveis
     int num;
@@ -33,7 +33,7 @@ void main()
 }
 
 // Funções
-int exibirSequencia(int n)
+void exibirSequencia(int n)
 {
     // Declaração de Variáveis
     int i, j;

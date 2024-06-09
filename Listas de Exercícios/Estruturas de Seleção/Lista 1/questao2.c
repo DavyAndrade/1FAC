@@ -30,7 +30,7 @@ void main()
     {
         printf("Entre com uma idade valida!!");
     }
-    
+
     // Atribuindo uma Categoria conforme a Idade do User
     else if (idade <= 4)
     {

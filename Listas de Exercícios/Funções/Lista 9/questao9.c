@@ -12,7 +12,7 @@ média de seus divisores.
 void calcularSomaMedia(int n, int *soma, float *media);
 
 // Main
-void main()
+int main()
 {
     // Declaração de Variáveis
     int num, soma;

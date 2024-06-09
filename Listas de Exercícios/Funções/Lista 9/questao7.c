@@ -21,7 +21,7 @@ comum com o número 6).
 int exibirDivisores(int n, int a, int b);
 
 // Main
-void main()
+int main()
 {
     // Declaração de Variáveis
     int num, inferior, superior, resultado;
